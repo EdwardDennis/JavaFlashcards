@@ -1,0 +1,224 @@
+Q: What is time complexity?
+A: Time complexity measures the number of fundamental operations an algorithm performs relative to its input size, indicating how runtime grows as the input increases.
+
+Q: What is space complexity?
+A: Space complexity quantifies the total memory an algorithm requires as a function of the input size, including both the input and any auxiliary storage.
+
+Q: Define Big O notation.
+A: Big O notation describes an algorithm’s upper-bound (worst-case) growth rate by abstracting out constant factors and lower order terms.
+
+Q: What does O(1) mean?
+A: O(1) (constant complexity) means the algorithm’s runtime or memory usage remains unchanged regardless of input size.
+
+Q: Give an example of a constant time operation in Java.
+A: Accessing an element in an array by its index (e.g. array[5]) is O(1) because it takes the same amount of time regardless of array length.
+
+Q: What is linear time complexity?
+A: Linear time complexity, O(n), means the running time increases directly in proportion to the input size.
+
+Q: Provide an example of a linear time operation in Java.
+A: Iterating through an array with a for-loop to print every element runs in O(n) time since each element is processed once.
+
+Q: What is quadratic time complexity?
+A: Quadratic time complexity, O(n²), occurs when an algorithm’s operations double in nested loops, causing runtime to increase with the square of the input size.
+
+Q: Describe a Java scenario that leads to O(n²) time complexity.
+A: Using a nested for‑loop to compare every element of an array with every other element (as in a basic bubble sort) results in O(n²) time.
+
+Q: What is logarithmic time complexity?
+A: Logarithmic time complexity, O(log n), means the running time increases by a constant factor with each doubling of the input size—often seen with divide-and-conquer approaches.
+
+Q: Give an example of an algorithm with O(log n) time.
+A: Binary search on a sorted array uses O(log n) time since it halves the search space after each comparison.
+
+Q: What does O(n log n) time complexity indicate?
+A: O(n log n) complexity means the algorithm’s runtime grows linearly with n and is multiplied by a logarithmic factor, common in efficient sorting algorithms.
+
+Q: Which sorting algorithms typically run in O(n log n) time?
+A: Merge sort and heap sort both have O(n log n) time complexity; quicksort averages O(n log n) though it can degrade to O(n²) in the worst case.
+
+Q: What is exponential time complexity?
+A: Exponential complexity, O(2ⁿ), means that every new input element doubles the number of operations, leading to extremely rapid growth in runtime.
+
+Q: What does factorial time complexity (O(n!)) mean?
+A: O(n!) indicates that the runtime increases factorially with input size, which is common in algorithms that generate all possible permutations.
+
+Q: How do worst-case, best-case, and average-case complexities differ?
+A: Worst-case is the maximum time an algorithm might take, best-case is the minimum possible time, and average-case is the expected time over all inputs.
+
+Q: How is time complexity measured using Big O notation?
+A: By counting the predominant operations and ignoring constant factors and lower order terms, Big O focuses on the term that most affects growth as the input increases.
+
+Q: What is amortized time complexity?
+A: Amortized complexity averages the cost of operations over a sequence so that expensive operations are “diluted” by many cheaper ones, yielding an overall constant cost on average.
+
+Q: What factors influence an algorithm’s space complexity in Java?
+A: Memory for variables, data structures, input storage, auxiliary space (temporary space), and the recursion stack all contribute to space complexity.
+
+Q: What is auxiliary space?
+A: Auxiliary space is the extra temporary space used by an algorithm, excluding the memory taken by the input itself.
+
+Q: Explain the fixed part and variable part in space complexity analysis.
+A: The fixed part includes memory for constants and static variables, while the variable part depends on input size (e.g. dynamic data structures, recursion stack).
+
+Q: If an algorithm uses only a few primitive variables, what is its space complexity?
+A: It is O(1) because the amount of memory used does not change with input size.
+
+Q: Provide an example of Java code with O(1) space complexity.
+A: A method that calculates the sum of two integers and returns it (without any extra data structures) exhibits O(1) space complexity.
+
+Q: Provide an example of Java code with O(n) space complexity.
+A: A function that allocates an output array sized to the number of input elements uses O(n) space.
+
+Q: What is the time complexity of accessing an element by index in an ArrayList?
+A: Accessing an element by index in an ArrayList is O(1) due to direct array indexing.
+
+Q: What is the space complexity of an ArrayList holding n elements?
+A: The space complexity is O(n) since the storage requirement grows linearly with the number of elements.
+
+Q: What is the time complexity of adding an element to the end of an ArrayList?
+A: Adding an element is O(1) on average (amortized), although occasional resizing may incur extra cost.
+
+Q: What is the time complexity of removing an element from an ArrayList?
+A: Removing an element from an ArrayList is O(n) because subsequent elements must be shifted.
+
+Q: What is the average time complexity for accessing a key in a HashMap?
+A: It is O(1) on average, thanks to hash-based indexing.
+
+Q: What is the average time complexity of inserting a key-value pair into a HashMap?
+A: Insertion in a HashMap is generally O(1) on average.
+
+Q: What is the worst-case time complexity for HashMap operations and why?
+A: In the worst-case (many hash collisions), HashMap operations can degrade to O(n) as they fall back to linear search within a bucket.
+
+Q: What is the time complexity of traversing a LinkedList in Java?
+A: Traversing a LinkedList is O(n) because you need to visit every node sequentially.
+
+Q: What is the space complexity of a LinkedList with n nodes in Java?
+A: It is O(n) since each node occupies additional memory.
+
+Q: When analyzing loops, how do you account for their iteration counts?
+A: You multiply the cost of the operations inside the loop by the number of iterations.
+
+Q: How do you calculate the time complexity of a simple for‑loop that runs n times?
+A: If each iteration is O(1), then the loop’s overall complexity is O(n).
+
+Q: What is the time complexity of a nested loop where both loops run n times?
+A: The total time complexity is O(n²) due to the product of the two loops’ iterations.
+
+Q: What are recurrences in the context of recursive algorithms?
+A: Recurrences are equations that express the overall time complexity in terms of the complexity of recursive calls.
+
+Q: Briefly explain the Master Theorem.
+A: The Master Theorem provides a way to solve recurrences of the form T(n) = aT(n/b) + f(n) to determine the time complexity of divide-and-conquer algorithms.
+
+Q: How does tail recursion affect space complexity?
+A: Tail recursion can be optimized to reuse a single stack frame, which may reduce space complexity from O(n) to O(1).
+
+Q: What is the time complexity of binary search?
+A: Binary search runs in O(log n) time because it halves the search space with each step.
+
+Q: What is the time complexity of linear search?
+A: Linear search has O(n) time complexity since, in the worst case, every element is examined.
+
+Q: What does it mean when we say an algorithm’s runtime “grows with input size”?
+A: It means that as the number of inputs increases, the number of operations (hence the runtime) increases in a predictable manner per the algorithm’s complexity.
+
+Q: How does Big O notation abstract away constant factors?
+A: It ignores multiplicative constants and lower order terms so that focus remains solely on the term that most significantly impacts growth as input increases.
+
+Q: What is the significance of the highest-order term in Big O notation?
+A: The highest-order term dominates the growth rate for large inputs and thus determines the overall time or space complexity.
+
+Q: Why is O(1) considered the ideal time complexity?
+A: Because operations with O(1) complexity take constant time regardless of input size, making them very efficient.
+
+Q: Why would you choose an O(n) algorithm over one with O(n²) time complexity?
+A: Because O(n) algorithms scale linearly and remain efficient with large inputs, whereas O(n²) algorithms become impractically slow.
+
+Q: What is the time complexity of the get() method for a Java HashMap?
+A: The get() method is typically O(1) on average due to direct hash-based retrieval.
+
+Q: What is the average time complexity of the put() method for a Java HashMap?
+A: It is O(1) on average, though rare resizing events might momentarily increase the cost.
+
+Q: What is the purpose of space complexity analysis?
+A: It helps determine the memory footprint of an algorithm, which is crucial for efficiency and resource management in constrained environments.
+
+Q: How do you analyze the space complexity of a recursive algorithm?
+A: By evaluating the maximum depth of the recursion stack along with any additional memory allocated during recursion.
+
+Q: How does the recursion stack impact space complexity?
+A: Each recursive call consumes stack space, so deep recursion can result in O(n) extra space.
+
+Q: How do loops typically affect space complexity?
+A: Loops do not inherently increase space unless they allocate new memory in each iteration; they usually operate with O(1) extra space.
+
+Q: What does Big Omega (Ω) notation represent?
+A: Big Omega gives the lower bound on the performance, indicating the best-case scenario for an algorithm’s growth rate.
+
+Q: What does Big Theta (Θ) notation signify?
+A: Big Theta provides a tight bound, meaning an algorithm’s complexity grows both no faster and no slower than the stated rate.
+
+Q: How do Big O, Big Omega, and Big Theta differ?
+A: Big O gives the upper bound (worst-case), Big Omega gives the lower bound (best-case), and Big Theta gives an asymptotically tight bound on the growth rate.
+
+Q: When analyzing space complexity, do you usually count input size?
+A: Typically, analysis focuses on auxiliary space (extra space used), not including the space for the input unless specified.
+
+Q: What is the difference between space complexity and auxiliary space?
+A: Space complexity includes total memory usage (input plus extra), while auxiliary space refers solely to the extra memory beyond the input.
+
+Q: True or False: An algorithm with higher time complexity always uses more space.
+A: False. An algorithm can be time efficient yet use substantial memory or vice versa.
+
+Q: What does “amortized O(1)” mean?
+A: It means that even though some individual operations may exceed constant time, over a large number of operations the average time per operation remains O(1).
+
+Q: Give an example of an operation with amortized O(1) time in Java.
+A: Adding elements to an ArrayList is amortized O(1) because most insertions are constant time, even though occasional resizing takes longer.
+
+Q: Which sorting algorithm has an average-case of O(n log n) but a worst-case of O(n²)?
+A: Quicksort averages O(n log n) but can worsen to O(n²) with poor pivot choices.
+
+Q: What is the worst-case time complexity of quicksort?
+A: In the worst case, quicksort runs in O(n²) time.
+
+Q: What is the time complexity of merge sort?
+A: Merge sort consistently runs in O(n log n) time in all cases.
+
+Q: How does recursion depth impact merge sort’s space complexity?
+A: Although merge sort has O(n log n) time, its recursive calls add overhead; however, the dominant extra space is typically O(n) for merging.
+
+Q: Why can iterative algorithms often have O(1) space complexity?
+A: Iterative algorithms can reuse a fixed number of variables for processing without needing extra memory proportional to input size.
+
+Q: What is the key difference between iterative and recursive space complexity?
+A: Iterative solutions typically use constant space, whereas recursive solutions may use additional space for each recursive call (the call stack).
+
+Q: Explain auxiliary space with an example.
+A: For example, a recursive factorial function uses extra space on the call stack (auxiliary space), whereas an iterative version may compute the factorial using constant space.
+
+Q: How do you decide which algorithm is more efficient in terms of time and space?
+A: Efficiency is determined by analyzing both time and space complexities, considering practical input sizes and application constraints to balance speed and memory usage.
+
+Q: What is the time complexity of in‑order traversal in a binary tree?
+A: In‑order traversal visits each node once, so its time complexity is O(n).
+
+Q: What is the space complexity of a recursive depth-first search (DFS) in a binary tree?
+A: The space complexity is O(h), where h is the height of the tree; in the worst-case (skewed tree), it becomes O(n).
+
+Q: Why does Big O notation ignore lower order terms and constants?
+A: It focuses on the dominant contributing factor for large inputs to simplify the comparison of algorithm performance.
+
+Q: How does input size n affect an O(n log n) algorithm’s runtime?
+A: The runtime increases roughly in proportion to n multiplied by the logarithm of n, making the growth moderate even for large inputs.
+
+Q: What techniques can be employed to optimize time complexity?
+A: Selecting more efficient algorithms, reducing nested loops, applying divide-and-conquer strategies, and using memoization in recursion can all optimize time complexity.
+
+Q: What techniques can help optimize space complexity?
+A: In-place operations, iterative solutions instead of recursion, careful data structure selection, and minimizing extra variable allocations can reduce space complexity.
+
+Q: Summarize the key differences between time and space complexity.
+A: Time complexity describes how the execution time of an algorithm scales with input size, while space complexity measures how its memory requirements grow with input size. Both are critical for evaluating efficiency.
