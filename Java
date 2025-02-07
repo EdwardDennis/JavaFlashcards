@@ -1,0 +1,218 @@
+Q: What is Java?
+A: Java is a high-level, object-oriented programming language used for building portable, secure, and scalable applications.
+
+Q: Why is Java considered platform-independent?
+A: Java code is compiled into bytecode that runs on the Java Virtual Machine (JVM), which abstracts away the underlying platform.
+
+Q: What is the JDK?
+A: The Java Development Kit (JDK) provides tools, libraries, and utilities for developing Java applications.
+
+Q: What is the JRE?
+A: The Java Runtime Environment (JRE) contains the JVM and the libraries required to run Java applications.
+
+Q: What is the JVM?
+A: The Java Virtual Machine (JVM) is an abstract computing machine that enables Java bytecode to be executed on any platform.
+
+Q: What are some of Java’s key features?
+A: Key features include object orientation, platform independence, robust memory management, security, multithreading, and a rich standard library.
+
+Q: What does the keyword “static” denote in Java?
+A: Static members belong to the class itself rather than to any instance, meaning they are shared among all objects of that class.
+
+Q: Explain the purpose of the “final” keyword.
+A: The final keyword prevents variables from being reassigned, methods from being overridden, or classes from being subclassed.
+
+Q: How does “==” differ from “.equals()” in Java?
+A: “==” checks for reference equality, while “.equals()” is used to compare object values or states.
+
+Q: What are wrapper classes?
+A: Wrapper classes encapsulate primitive data types as objects (e.g., Integer for int), allowing primitives to be used in collections.
+
+Q: What is the String pool?
+A: The String pool is a special area in the heap that stores string literals to optimize memory by reusing immutable string instances.
+
+Q: How does creating a String using a literal differ from using new String()?
+A: A string literal reuses an existing instance from the pool if available, while new String() always creates a new object.
+
+Q: What is autoboxing and unboxing?
+A: Autoboxing automatically converts primitives to their corresponding wrapper objects; unboxing converts them back to primitives.
+
+Q: What are the four pillars of object-oriented programming (OOP)?
+A: Encapsulation, Inheritance, Polymorphism, and Abstraction.
+
+Q: Define encapsulation in Java.
+A: Encapsulation is bundling data with methods that operate on that data and restricting direct access to some components.
+
+Q: What is inheritance?
+A: Inheritance allows a class (subclass) to inherit fields and methods from another class (superclass).
+
+Q: What is polymorphism?
+A: Polymorphism allows methods to perform different tasks based on the object that invokes them, using method overriding or overloading.
+
+Q: Explain abstraction in Java.
+A: Abstraction hides the implementation details and exposes only the functionality, achieved using abstract classes or interfaces.
+
+Q: How does an abstract class differ from an interface?
+A: Abstract classes can have state and both abstract and concrete methods, while interfaces primarily declare methods (with default methods added in Java 8).
+
+Q: What is an interface?
+A: An interface is a contract that specifies abstract methods a class must implement.
+
+Q: How does Java simulate multiple inheritances?
+A: By allowing a class to implement multiple interfaces, since Java does not support multiple inheritance of classes.
+
+Q: What is method overloading?
+A: Method overloading means having multiple methods with the same name but different parameter lists in a class.
+
+Q: What is method overriding?
+A: Overriding occurs when a subclass provides its own implementation of a method already defined in its superclass.
+
+Q: What is the role of the “super” keyword?
+A: “super” is used to access members (fields or methods) of the parent class or to invoke its constructor.
+
+Q: How is the “this” keyword used in Java?
+A: “this” refers to the current object instance and is often used to differentiate between instance variables and parameters.
+
+Q: What are checked exceptions?
+A: Checked exceptions are verified at compile time, requiring handling via try-catch or declaration in the method signature (e.g., IOException).
+
+Q: What are unchecked exceptions?
+A: Unchecked exceptions (runtime exceptions) occur during program execution and do not need to be explicitly handled (e.g., NullPointerException).
+
+Q: How do you implement exception handling in Java?
+A: Through the use of try-catch blocks, optionally with a finally block to execute code regardless of an exception.
+
+Q: What is the purpose of the finally block?
+A: The finally block executes code after try/catch regardless of whether an exception was thrown or caught.
+
+Q: Differentiate “throw” and “throws”.
+A: “throw” is used to explicitly raise an exception, whereas “throws” declares exceptions that a method can propagate.
+
+Q: What is the Collections Framework?
+A: It is a comprehensive set of interfaces and classes (like List, Set, Map) for storing and manipulating groups of objects.
+
+Q: What is the difference between ArrayList and LinkedList?
+A: ArrayList uses a dynamic array for storage with fast random access, while LinkedList uses a doubly linked list structure with efficient insertions and deletions.
+
+Q: What is a HashMap?
+A: HashMap is a key-value store providing average O(1) time complexity for basic operations like get and put.
+
+Q: How does a HashSet differ from a TreeSet?
+A: HashSet offers constant-time performance and no order guarantee, while TreeSet maintains elements in a sorted order with O(log n) operations.
+
+Q: What are generics in Java?
+A: Generics allow classes, interfaces, and methods to operate on types specified as parameters, ensuring type safety at compile time.
+
+Q: Describe the Java memory model.
+A: The model divides memory into the heap (for objects) and the stack (for method calls and local variables).
+
+Q: What is garbage collection?
+A: Garbage collection is the process where the JVM automatically reclaims memory by removing objects that are no longer reachable.
+
+Q: What is the finalize() method used for?
+A: finalize() is called before garbage collection to allow cleanup, but its use is discouraged due to unpredictability.
+
+Q: What are strong, weak, and soft references?
+A: They are reference types that determine an object’s eligibility for garbage collection based on how the object is referenced.
+
+Q: What is multithreading?
+A: Multithreading is the concurrent execution of two or more threads, increasing a program’s efficiency and performance.
+
+Q: How do you create a thread in Java?
+A: By either extending the Thread class or implementing the Runnable interface.
+
+Q: What does synchronization mean in the context of multithreading?
+A: Synchronization ensures only one thread accesses a critical section at a time to prevent data inconsistency.
+
+Q: What is a deadlock in Java?
+A: A deadlock occurs when two or more threads are blocked forever, waiting for each other to release locks.
+
+Q: How can you prevent deadlocks?
+A: By using strategies such as acquiring locks in a fixed order, using lock timeouts, or minimizing synchronized code.
+
+Q: What are lambda expressions?
+A: Lambda expressions provide a concise way to implement single-method interfaces (functional interfaces) by expressing instances of anonymous functions.
+
+Q: How are streams used in Java 8?
+A: Streams support functional-style operations on collections, enabling filtering, mapping, and reducing data in a declarative manner.
+
+Q: What is the purpose of the Optional class?
+A: Optional is a container object that may or may not contain a non-null value, helping to avoid null pointer exceptions.
+
+Q: What is the Singleton design pattern?
+A: The Singleton pattern ensures a class has only one instance and provides a global point of access to it.
+
+Q: What is the Factory design pattern?
+A: The Factory pattern encapsulates object creation, allowing a method or class to decide which class to instantiate without exposing the instantiation logic.
+
+Q: Explain the Observer design pattern.
+A: In the Observer pattern, objects (observers) register with another object (subject) to receive notifications when the subject’s state changes.
+
+Q: What is reflection in Java?
+A: Reflection allows a program to inspect and modify its runtime behavior, such as dynamically accessing classes, methods, and fields.
+
+Q: What is dynamic binding?
+A: Dynamic binding determines which method implementation to execute at runtime, making polymorphism possible.
+
+Q: Explain the try-with-resources statement.
+A: It automatically closes resources (objects implementing AutoCloseable) after a try block, reducing boilerplate code.
+
+Q: What is the Java module system?
+A: Introduced in Java 9, it organizes code into modules with explicit dependencies, improving maintainability and encapsulation.
+
+Q: How do you stay current with Java advancements?
+A: By reading official documentation, blogs, following community forums, and attending conferences or webinars.
+
+Q: How do you handle conflicts within a development team?
+A: By communicating openly, understanding different viewpoints, and working toward a mutually beneficial solution.
+
+Q: What are your core strengths as a Java developer?
+A: (Your answer should reflect your technical expertise, analytical skills, and adaptability to new technologies.)
+
+Q: How do you approach learning a new technology?
+A: I research through documentation, experiment with small projects, and leverage community resources to gain hands-on experience.
+
+Q: What are unit tests and why are they important?
+A: Unit tests verify individual code components, helping maintain code quality and facilitate regression testing.
+
+Q: Which testing frameworks are popular in Java?
+A: JUnit, TestNG, and Mockito are widely used for unit testing and mocking dependencies.
+
+Q: What is Test-Driven Development (TDD)?
+A: TDD is the practice of writing tests before code so that tests drive the design and development of features.
+
+Q: How do you debug a Java application?
+A: I use IDE debugging tools, log statements, and systematic code analysis to trace and fix issues.
+
+Q: How do you profile a Java application?
+A: By using tools such as VisualVM, JProfiler, or YourKit to monitor performance metrics and identify bottlenecks.
+
+Q: How can Java code be optimized?
+A: By refactoring inefficient code, choosing appropriate data structures/algorithms, and implementing caching where appropriate.
+
+Q: What build tools are commonly used in Java projects?
+A: Ant, Maven, and Gradle are popular tools for building projects and managing dependencies.
+
+Q: What is continuous integration/continuous deployment (CI/CD)?
+A: CI/CD automates building, testing, and deploying code, ensuring a more efficient and reliable development process.
+
+Q: What is a container and have you used Docker with Java?
+A: Containers encapsulate an application and its dependencies for consistent deployment; Docker is widely used for containerizing Java applications.
+
+Q: How do you interact with databases in Java?
+A: Using JDBC directly or via ORM frameworks such as Hibernate or the Java Persistence API (JPA).
+
+Q: What is connection pooling?
+A: Connection pooling reuses database connections to optimize performance by reducing the overhead of establishing connections repeatedly.
+
+Q: Which version control systems are you familiar with?
+A: Most developers work with Git, along with systems like SVN or Mercurial.
+
+Q: How do you resolve merge conflicts in Git?
+A: By communicating with teammates, using diff tools, and manually merging changes to maintain code integrity.
+
+Q: What is your approach to solving a coding problem during an interview?
+A: I start by understanding the problem requirements, designing an algorithm, writing pseudocode, coding the solution, and finally testing it.
+
+Q: What has been your experience with code reviews?
+A: I actively participate in code reviews to provide constructive feedback and to learn best practices, ensuring continuous improvement of code quality.
